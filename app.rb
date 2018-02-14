@@ -6,7 +6,7 @@ require('./lib/favorite_things')
 
 get('/') do
   @list = Item.all()
-  erb(:input)
+  erb(:list)
 end
 
 post('/') do
